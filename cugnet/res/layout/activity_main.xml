@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture5"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_launcher" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="感谢使用CUG自动登录"
+            android:textColor="#57647D"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="请输入您的账号 "
+                android:textColorHint="#A3B1CA"
+                android:textSize="15sp" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="4dp"
+                android:background="#F2F2F2" >
+            </View>
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="10dp"
+                android:hint="请输入您的密码  "
+                android:inputType="textPassword"
+                android:textColorHint="#A3B1CA"
+                android:textSize="15sp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_dianxin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.5"
+                    android:checked="true"
+                    android:text="电信网"
+                    android:textColor="#5E6A81"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_jiaoyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:checked="false"
+                    android:text="教育网"
+                    android:textColor="#5E6A81"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin_once"
+            android:layout_width="230dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:gravity="center"
+            android:text="登         录"
+            android:textColor="#57647D"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </Button>
+       
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/zhucexinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="by 点石团队-王亮"
+            android:textColor="#5E6A81"
+            android:textSize="14sp" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

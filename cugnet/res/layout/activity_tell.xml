@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cugnet.TellActivity" 
+    android:background="@drawable/picture4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:text="\n本软件不会记录用户任何信息。\n第一次登录请输入账号密码\n按HOME键将程序保持到后台才可自动登录，若登陆失败请尝试手动登录。\n若有问题请及时联系我，感谢。\nq648917857"
+        android:textSize="26sp"
+        android:textColor="#57647D" />
+
+</RelativeLayout>
